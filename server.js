@@ -10,7 +10,7 @@
  * Optional:
  *   PORT              Defaults to 3000
  *   IPAY_BASE_URL     Defaults to https://api.ipay.tn
- *   IPAY_PRODUCT_CODE Defaults to SWIFTCAPITALSAVINGS (must exist in iPay)
+ *   IPAY_PRODUCT_CODE Defaults to SWITCH APITAL SAVINGS (must exist in iPay)
  *   APP_API_KEY       Protects the administrative proxy routes
  *   CORS_ORIGINS      Defaults to *; otherwise comma-separated origins
  *   PUBLIC_CHECKOUTS_PER_MINUTE Defaults to 10 per client IP
@@ -41,7 +41,7 @@ const ORG_ID = process.env.IPAY_ORG_ID || '';
 const IPAY_JWT = process.env.IPAY_JWT || '';
 const APP_API_KEY = process.env.APP_API_KEY || '';
 const IPAY_BASE_URL = process.env.IPAY_BASE_URL || 'https://api.ipay.tn';
-const IPAY_PRODUCT_CODE = (process.env.IPAY_PRODUCT_CODE || 'SWIFTCAPITALSAVINGS').trim();
+const IPAY_PRODUCT_CODE = (process.env.IPAY_PRODUCT_CODE || 'SWITCH APITAL SAVINGS').trim();
 const PUBLIC_CHECKOUTS_PER_MINUTE = Math.max(
   1,
   Number.parseInt(process.env.PUBLIC_CHECKOUTS_PER_MINUTE || '10', 10) || 10
